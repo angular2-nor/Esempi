@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Should mankind colonize the Universe?</h2>
+  <button (click)="myEvent()">"Emit"</button>
+
+  <h3>Agree: {{agreed}}, Disagree: {{disagreed}}</h3>
+  <child *ngFor="let voter of voters"
+            [name]="voter"
+            (onVotedChild)="onVoted($event)">
+  </child>
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  </p>
+</ion-content>

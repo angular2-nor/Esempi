@@ -1,0 +1,15 @@
+<!--
+  Generated template for the Astronaut component.
+
+  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+
+<p>
+  {{astronaut}}: <strong>{{mission}}</strong>
+  <button
+    (click)="confirm()"
+    [disabled]="!announced || confirmed">
+    Confirm
+  </button>
+</p>
